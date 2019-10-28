@@ -18,6 +18,7 @@ var serial = {};
       { 'vendorId': 0x2341, 'productId': 0x804f },
       { 'vendorId': 0x2341, 'productId': 0x8050 },
       { 'vendorId': 0x239A, 'productId': 0x802B },//Adafruit Itsy Bitsy
+      { 'vendorId': 0x239A, 'productId': 0x8022 },//Adafruit Feather M4
     ];
     return navigator.usb.requestDevice({ 'filters': filters }).then(
       device => new serial.Port(device)
